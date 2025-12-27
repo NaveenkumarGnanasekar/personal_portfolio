@@ -17,33 +17,23 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 25px 80px;
-    margin-right: 600px;
+    margin-right: 550px;
 }
 
 .logo {
-    font-size: 40px;
+    font-size: 30px;
     color: #ff6b5c;
 }
 
 .navbar nav a {
-    margin: 0 18px;
+    margin: 0 16px;
     text-decoration: none;
     color: #444;
-    font-weight: 500;;
+    font-weight: 500;
 }
 
 .navbar nav a:hover {
     color: #ff6b5c;
-}
-
-.hire-btn {
-    background-color: #ff6b5c;
-    color: white;
-    border: none;
-    padding: 10px 22px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
 }
 
 /* ===== HERO ===== */
@@ -51,14 +41,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 80px;
+    padding: 80px;
+    margin-top: 50px;
+    margin-bottom: 200px;
 }
 
 .hero-left {
     max-width: 1000px;
-    margin-top: 200px;
-    margin-left: 150px;
-
+    margin-left: 100px;
+    margin-top: 30px;
 }
 
 .hero-left h1 {
@@ -73,32 +64,20 @@ body {
 .hero-left p {
     font-size: 18px;
     line-height: 1.6;
-    margin-bottom: 30px;
     color: #555;
-}
-
-.learn-btn {
-    background-color: #ff6b5c;
-    color: white;
-    border: none;
-    padding: 12px 26px;
-    border-radius: 6px;
-    cursor: pointer;
 }
 
 .hero-right img {
     width: 360px;
     border-radius: 70%;
     margin-right: 100px;
-    margin-top: 70px;
 }
 
 /* ===== ABOUT ===== */
 #about {
     background-color: #1f2b55;
     color: #fff;
-    padding: 80px 100px;
-    margin-top: 300px;
+    padding: 100px;
 }
 
 #about h2 {
@@ -111,9 +90,47 @@ body {
     line-height: 1.8;
 }
 
+/* ===== SKILLS ===== */
+#skills {
+    padding: 100px;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.skill-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.skill-box h3 {
+    color: #ff6b5c;
+    margin-bottom: 15px;
+}
+
+.skill-box ul {
+    list-style: none;
+}
+
+.skill-box li {
+    padding: 6px 0;
+}
+
 /* ===== ACHIEVEMENTS ===== */
 #achievements {
     padding: 100px;
+    background-color: #fff;
 }
 
 #achievements h2 {
@@ -129,10 +146,9 @@ body {
 }
 
 .achievement-card {
-    background-color: #fff;
+    background-color: #f7f7f7;
     padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .achievement-card h3 {
@@ -143,7 +159,6 @@ body {
 /* ===== EVENTS ===== */
 #events {
     padding: 100px;
-    background-color: #fff;
 }
 
 #events h2 {
@@ -167,12 +182,6 @@ body {
     background-color: #f7f7f7;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
-}
-
-.event-card:hover {
-    transform: translateY(-6px);
 }
 
 .event-card img {
@@ -184,16 +193,43 @@ body {
 .caption {
     padding: 15px;
     text-align: center;
-    font-size: 14px;
     background-color: #fff;
+}
+
+/* ===== CONTACT ===== */
+#contact {
+    background-color: #1f2b55;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 /* ===== FOOTER ===== */
 footer {
     background-color: #cecece;
-    color: #000000;
     text-align: center;
-    justify-content: space-between;
     padding: 30px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 15px;
+}
+
+.social-links img {
+    width: 48px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 8px #ff6b5c);
 }
 
